@@ -1,0 +1,80 @@
+@media screen and (min-width: 1024px) {
+    button {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        padding: 10px 30px;
+        background-color: #3498db;
+        color: #ffffff;
+        font-size: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #vs {
+        margin: 3.3%;
+    }
+    #turn{
+        display: none;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    body > * {
+        display: none;
+      }
+      #turn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  }
+  
+
+@media screen and (max-width: 999px) and (orientation: landscape) {
+    button {
+        height: 16%;
+        width: 11%;
+        border-radius: 50%;
+        padding: 15px 15px;
+        background-color: #3498db;
+        color: #ffffff;
+        font-size: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #vs {
+
+        margin: 13.9%;
+
+    }
+    #turn{
+        display: none;
+    }
+}
+
+
+
+
+
+#rbt button {
+    background-color: #D678FA;
+}
+
+#score {
+    text-align: center;
+}
+
+#score h1 {
+    font-size: 30px;
+}
+
+#score h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#score span {
+    font-size: 20px;
+}
