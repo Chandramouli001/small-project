@@ -1,0 +1,128 @@
+.dark-mode {
+    background-color: #222;
+
+    form {
+        background-color: #333;
+        color: #fff;
+        border-radius: 8px;
+    }
+
+    input[type="text"] {
+        background-color: #444;
+        color: #fff;
+    }
+
+    ol li {
+        color: #fff;
+        background-color: #444;
+    }
+
+    #sub {
+        background-color: yellow;
+        color: black;
+    }
+
+    #find {
+        background-color: green;
+        color: black;
+    }
+    #toggle {
+        background-color: #ffffff;
+    }
+    #toggle::after {
+        content: '☀️';
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+#sub {
+    background-color: rgb(247, 145, 30);
+    color: black;
+}
+
+#find {
+    background-color: rgb(76, 153, 253);
+    color: black;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ol {
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+ol li {
+    font-size: larger;
+    margin-bottom: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: #bd2130;
+}
+
+#toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: #000000;
+}
+
+#toggle::after {
+    content: '🌙';
+}
