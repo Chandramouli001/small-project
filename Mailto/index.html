@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MailTo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <form id="Form">
+        <h1>Mailto Generator</h1>
+        <label for="email">Recipients</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="xyz@mail.com"
+          required
+        />
+        <br />
+        <label for="subject">Subject</label>
+        <input
+          type="text"
+          name="subject"
+          id="subject"
+          placeholder="Write your Subject here!"
+          required
+        /><br />
+        <label for="body"> Body</label>
+        <input
+          type="text"
+          name="body"
+          id="body"
+          placeholder="Write your Body here!"
+          required
+        /><br />
+        <button type="button" onclick="generateMailtoLink()" id="btn">
+          Generate
+        </button>
+        <button type="reset" id="btn">Reset</button>
+      </form>
+      <br />
+    </div>
+    <div class="op" id="op">
+        <h4>Mailto Link:</h4>
+        <button id="copy-btn-1" class="copy-btn" onclick="copyFunction()">
+            Copy
+        </button>
+        <p id="outputText"></p>
+    </div>
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>
